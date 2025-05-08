@@ -1,0 +1,55 @@
+.about {
+    color: #e5e7eb;
+
+    .profile-img {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 50%;
+        box-shadow: 0 0 12px rgba(0, 0, 0, 0.6);
+    }
+
+    h2 {
+        font-size: 1.56rem;
+        font-weight: 400;
+    }
+
+    .description {
+        max-width: 32rem;
+        font-size: 0.875rem;
+        line-height: 1.4;
+        color: #cbd5e1;
+    }
+
+    .btn-group {
+        .btn {
+            min-width: 160px;
+            font-weight: 500;
+            font-size: 0.95rem;
+        }
+    }
+
+    .btn-orange {
+        background-color: #ea580c;
+        color: white;
+        border: none;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+            background-color: #c2410c;
+            color: white;
+        }
+    }
+
+    .btn-orange-outline {
+        background-color: transparent;
+        color: #ea580c;
+        border: 2px solid #ea580c;
+        transition: all 0.3s ease;
+
+        &:hover {
+            background-color: #ea580c;
+            color: white;
+        }
+    }
+}

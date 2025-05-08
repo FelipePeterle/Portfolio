@@ -1,0 +1,19 @@
+.header {
+  h1 {
+    background-image: linear-gradient(to right, #ea580c, #9a3412);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    font-weight: 600;
+  }
+
+  .icon-white {
+    color: white;
+
+    &:hover {
+      color: #ea580c;
+    }
+  }
+}
