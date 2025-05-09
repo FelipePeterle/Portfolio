@@ -7,7 +7,7 @@
                 <a :href="tech.url" target="_blank" rel="noopener"
                     class="tech-icon d-flex justify-content-center align-items-center m-auto text-decoration-none">
                     <div class="icon-inner">
-                        <AppIcon :icon="tech.icon" width="36" />
+                        <AppIcon :icon="tech.icon" width="36"/>
                     </div>
                 </a>
             </div>
