@@ -1,0 +1,26 @@
+.footer {
+    font-size: 0.85rem;
+    margin-top: -1px;
+
+    .container-footer {
+        width: 80%;
+        margin: 0 auto;
+
+        .text-gradient {
+            background-image: linear-gradient(to right, #ea580c, #9a3412);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            color: transparent;
+        }
+    }
+
+    .footer-icon {
+        color: #a3a3a3;
+        transition: color 0.3s;
+
+        &:hover {
+            color: #ea580c;
+        }
+    }
+}

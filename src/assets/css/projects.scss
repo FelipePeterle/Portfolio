@@ -1,0 +1,39 @@
+.projects {
+    .tech-badge {
+        background-color: #111;
+        color: #ea580c;
+        font-size: 0.8rem;
+        padding: 0.3rem 0.6rem;
+        border-radius: 6px;
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        transition: all 0.2s ease;
+
+        &:hover {
+            border-color: #ea580c;
+            background-color: #1c1c1c;
+        }
+    }
+
+    .project-title {
+        color: #ea580c;
+        font-weight: 600;
+    }
+
+    .btn-orange-outline {
+        background-color: transparent;
+        color: #ea580c;
+        border: 2px solid #ea580c;
+        transition: all 0.3s ease;
+
+        &:hover {
+            background-color: #ea580c;
+            color: white;
+        }
+    }
+
+    &.border-section {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        width: 80%;
+        margin: 0 auto 3rem;
+    }
+}
