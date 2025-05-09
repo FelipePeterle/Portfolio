@@ -1,6 +1,6 @@
 <template>
   <header class="header d-flex justify-content-between align-items-center pb-5">
-    <h1 class="m-0">{{ title }}</h1>
+    <h1 class="m-0" @click="getUrlHome()">{{ title }}</h1>
     <nav class="icon">
       <ul class="m-0 d-flex align-items-center list-unstyled gap-3">
         <li>
@@ -24,6 +24,11 @@ export default {
   data() {
     return {
       title: 'Felipe Peterle'
+    }
+  },
+  methods:{
+    getUrlHome(){
+      this.$router.push({name: 'home'})
     }
   }
 }

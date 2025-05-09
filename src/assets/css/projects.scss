@@ -1,4 +1,6 @@
 .projects {
+    width: 80%;
+    margin: 0 auto 3rem;
     .tech-badge {
         background-color: #111;
         color: #ea580c;
@@ -17,6 +19,20 @@
     .project-title {
         color: #ea580c;
         font-weight: 600;
+        transition: color 0.3s ease;
+    }
+
+    img {
+        transition: transform 0.3s ease;
+        cursor: pointer;
+
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+
+    .col-lg-4:hover .project-title {
+        color: #ff9e55;
     }
 
     .btn-orange-outline {
@@ -29,11 +45,5 @@
             background-color: #ea580c;
             color: white;
         }
-    }
-
-    &.border-section {
-        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-        width: 80%;
-        margin: 0 auto 3rem;
     }
 }

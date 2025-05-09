@@ -9,9 +9,6 @@
                 <a href="https://github.com/FelipePeterle" target="_blank" rel="noopener" class="footer-icon">
                     <AppIcon icon="mdi:github" width="20" />
                 </a>
-                <a href="https://seu-site.com" target="_blank" rel="noopener" class="footer-icon">
-                    <AppIcon icon="mdi:earth" width="20" />
-                </a>
             </div>
         </div>
     </footer>
