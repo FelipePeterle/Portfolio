@@ -1,6 +1,6 @@
 <template>
     <section class="technologies d-flex flex-column align-items-center text-center py-5 px-3">
-        <h2 class="mb-4">Tecnologias</h2>
+        <h2 class="mb-4">{{ $t('technologies.title') }}</h2>
         <div
             :class="isMobile ? 'row justify-content-center g-3 w-100' : 'tech-grid d-flex flex-nowrap justify-content-center overflow-auto gap-3 w-100'">
             <div v-for="tech in techs" :key="tech.name" :class="isMobile ? 'col-4' : ''">

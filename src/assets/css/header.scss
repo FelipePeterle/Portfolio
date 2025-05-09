@@ -22,3 +22,25 @@
     }
   }
 }
+
+.custom-dropdown {
+  background: #1f1f27;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 0.25rem 0;
+  .dropdown-item {
+    color: #fff;
+    font-size: 0.875rem;
+    transition: background-color 0.2s;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.05);
+    }
+  }
+  .activeLang {
+    color: #ea580c;
+    font-weight: 500;
+  }
+  .check {
+    font-size: 0.8rem;
+  }
+}
