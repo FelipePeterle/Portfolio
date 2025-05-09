@@ -28,31 +28,31 @@ export default {
         return {
             experiences: [
                 {
-                    period: 'Junho, 2023 - Atualmente',
-                    title: 'Caixa Web - Desenvolvedor Full-Stack',
-                    company: 'Autoglass',
-                    companyUrl: 'https://www.autoglass.com.br/',
+                    period: 'Dezembro, 2024 - Atualmente',
+                    title: 'Analista de Desenvolvimento',
+                    company: 'CPAPS - Terapia do Sono',
+                    companyUrl: 'https://www.cpaps.com.br/',
                     description:
-                        'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
-                    tech: ['C#', '.Net', 'TypeScript', 'Angular', 'Oracle', 'Kafka']
+                        'Atuando como Desenvolvedor Front-End, sou responsável pela construção diária de layouts responsivos, integrando interfaces com APIs desenvolvidas no Back-End por meio de requisições HTTP. Utilizo Git e GitHub para controle de versionamento e colaboração em equipe. Também realizo consultas e manipulações de dados em banco de dados MySQL localmente, além de consumir endpoints criados em PHP para aplicação no Front-End. Trabalho com metodologias ágeis, como Scrum e Kanban, para organização e acompanhamento eficiente dos projetos.',
+                    tech: ['HTML','Css','JavaScript','VueJs','Sass','Bootstrap','Git','GitHub','PHP','MySql','Docker']
                 },
                 {
-                    period: 'Junho, 2022 - Junho, 2023',
-                    title: 'Gestão de Risco ao Crédito - Desenvolvedor Full-Stack',
-                    company: 'Autoglass',
-                    companyUrl: 'https://www.autoglass.com.br/',
+                    period: 'Novembro, 2023 - Dezembro, 2024',
+                    title: 'Assistente de TI',
+                    company: 'CPAPS - Terapia do Sono',
+                    companyUrl: 'https://www.cpaps.com.br/',
                     description:
-                        'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
-                    tech: ['C#', '.Net', 'TypeScript', 'Angular', 'MongoDB', 'SQS']
+                        'Atuei como Assistente de TI, prestando suporte ao cliente interno e acompanhando rotinas de manutenção. Durante esse período, aprofundei meus estudos em desenvolvimento Front-End e, mesmo na função de Assistente, tive a oportunidade de colaborar em equipe com outros desenvolvedores. Participei da criação de layouts e desenvolvimento de novos módulos para a empresa, consumindo APIs desenvolvidas pelo Back-End, utilizando endpoints e requisições para implementar funcionalidades.',
+                    tech: ['HTML','Css','JavaScript','VueJs','Sass','Bootstrap','Git','GitHub','Docker']
                 },
                 {
-                    period: 'Março, 2023 - Julho, 2023',
-                    title: 'Aksie - Desenvolvedor Front-end',
-                    company: 'Freelance',
-                    companyUrl: '#',
+                    period: 'Julho, 2023 - Novembro, 2023',
+                    title: 'Estagiário de TI',
+                    company: 'CPAPS - Terapia do Sono',
+                    companyUrl: 'https://www.cpaps.com.br',
                     description:
-                        'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
-                    tech: ['TypeScript', 'Angular', 'SASS']
+                        'Iniciei minha carreira como estagiário de TI, onde tive a oportunidade de adquirir experiência tanto na área de infraestrutura quanto no desenvolvimento. Durante esse período, prestei suporte ao cliente interno, participei das rotinas de manutenção de computadores, substituição de equipamentos, realização de reparos e outras atividades relacionadas ao suporte técnico.',
+                    tech: []
                 }
             ],
             visible: []

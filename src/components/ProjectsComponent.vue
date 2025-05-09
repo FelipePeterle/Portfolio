@@ -28,22 +28,22 @@ export default {
     return {
       projects: [
         {
-          name: 'GoShort',
-          image: require('@/assets/img/perfil.jpeg'),
-          tech: ['Go', 'Next.Js', 'TypeScript', 'MySQL', 'Nginx', 'Docker'],
-          description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.'
+          name: 'MakeYourburger',
+          image: require('@/assets/img/Projects/makeYourBurger.gif'),
+          tech: ['HTML', 'Css', 'Javascript', 'Vue', 'Sass'],
+          description: 'Projeto feito para servir como gerenciamento de uma loja virtual de uma hamburgueria, podendo ser feito desde o cadastro,remoção e atualização de um pedido. Utilizado também o JSON Server para mockar o backend.'
         },
         {
-          name: 'PicPayChallenge',
-          image: require('@/assets/img/perfil.jpeg'),
-          tech: ['C#', '.Net', 'React', 'Next.js', 'MySQL', 'Kafka'],
-          description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.'
+          name: 'VidFlow',
+          image: require('@/assets/img/Projects/Vidflow.png'),
+          tech: ['HTML', 'Css', 'Javascript'],
+          description: 'Esse projeto foi feito apartir do curso de JavaScript: consumindo e tratando dados de uma API da Alura, aonde pude aprimorar conhecimento de consumir api pelo frontend, criação de filtros dinâmicos, criação de função assíncronas e seus respectivos tratamentos, também foi utilizado JSON Server para mockar o backend.'
         },
         {
-          name: 'Quasar E-Commerce',
-          image: require('@/assets/img/perfil.jpeg'),
-          tech: ['C#', '.Net', 'Angular', 'MySQL'],
-          description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.'
+          name: 'Fokus',
+          image: require('@/assets/img/Projects/Fokus.png'),
+          tech: ['HTML','Css','Javascript'],
+          description: 'Projeto feito durante meu período de estudo, foi feito apartir das aulas de manipulação do Dom e do LocalStorage nas videoaulas da Alura, aonde pude me aprofundar mais no meu conhecimento de javascript.'
         }
       ]
     }
