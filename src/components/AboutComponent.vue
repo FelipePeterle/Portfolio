@@ -5,8 +5,8 @@
         <div class="animate-slide-left delay-2">
             <p class="description mb-4">{{ $t('about.description') }}</p>
             <div class="btn-group mt-2">
-                <a href="#contato" class="btn btn-orange me-2 pt-3 pb-3">{{ $t('about.contact') }}</a>
-                <a href="/cv/MeuCV.pdf" download class="btn btn-orange-outline pt-3 pb-3">{{ $t('about.download') }}</a>
+                <a href="https://wa.me/5527998806513?text=Olá%2C%20gostaria%20de%20falar%20sobre%20seu%20portfolio" target="_blank" class="btn btn-orange me-2 pt-3 pb-3">{{ $t('about.contact') }}</a>
+                <a href="https://drive.google.com/file/d/1vYDCDk083-3fqU5Tx443tkU5GLzotIID/view?usp=drive_link" target="_blank" class="btn btn-orange-outline pt-3 pb-3">{{ $t('about.download') }}</a>
             </div>
         </div>
     </section>
@@ -15,6 +15,6 @@
 
 <script>
 export default {
-    name: 'AboutComponent'
+    name: 'AboutComponent',
 }
 </script>
