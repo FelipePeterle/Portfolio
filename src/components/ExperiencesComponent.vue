@@ -33,7 +33,7 @@ export default {
                     company: 'Autoglass',
                     companyUrl: 'https://www.autoglass.com.br/',
                     description:
-                        'Atuo no time de desenvolvimento do produto de faturamento e emissão de notas da empresa utilizando .Net, Angular, Oracle e Kafka. Aplicação dos princípios de Design Orientado a Domínio (DDD) e Clean Architecture. Utilização de metodologias ágeis, incluindo Scrum e Kanban, para o gerenciamento de projetos.',
+                        'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
                     tech: ['C#', '.Net', 'TypeScript', 'Angular', 'Oracle', 'Kafka']
                 },
                 {
@@ -42,7 +42,7 @@ export default {
                     company: 'Autoglass',
                     companyUrl: 'https://www.autoglass.com.br/',
                     description:
-                        'Atuei no time de desenvolvimento do produto de análise de crédito financeiro utilizando .Net, Angular, MongoDB, SQS. Desempenhei um papel crucial no desenvolvimento do processo de análise automatizada, implementando o processo assíncrono de fila com o SQS. E na reestruturação do armazenamento de anexos. Além disso, utilizávamos a metodologia ágil Scrum.',
+                        'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
                     tech: ['C#', '.Net', 'TypeScript', 'Angular', 'MongoDB', 'SQS']
                 },
                 {
@@ -51,7 +51,7 @@ export default {
                     company: 'Freelance',
                     companyUrl: '#',
                     description:
-                        'Atuei como desenvolvedor Front-end para uma plataforma de gerenciamento contábil. Utilizando as tecnologias Angular, TypeScript, SASS.',
+                        'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
                     tech: ['TypeScript', 'Angular', 'SASS']
                 }
             ],

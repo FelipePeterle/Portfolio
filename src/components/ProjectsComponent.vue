@@ -31,19 +31,19 @@ export default {
           name: 'GoShort',
           image: require('@/assets/img/perfil.jpeg'),
           tech: ['Go', 'Next.Js', 'TypeScript', 'MySQL', 'Nginx', 'Docker'],
-          description: 'GoShort é um serviço simples e eficiente de encurtamento de URLs, projetado para redirecionamentos rápidos.'
+          description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.'
         },
         {
           name: 'PicPayChallenge',
           image: require('@/assets/img/perfil.jpeg'),
           tech: ['C#', '.Net', 'React', 'Next.js', 'MySQL', 'Kafka'],
-          description: 'Desafio técnico no PicPay, incluindo Kafka e PagSeguro para múltiplos métodos de pagamento.'
+          description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.'
         },
         {
           name: 'Quasar E-Commerce',
           image: require('@/assets/img/perfil.jpeg'),
           tech: ['C#', '.Net', 'Angular', 'MySQL'],
-          description: 'Projeto E-commerce colaborativo utilizando Angular no front e C# no back-end.'
+          description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.'
         }
       ]
     }
