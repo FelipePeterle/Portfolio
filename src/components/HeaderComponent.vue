@@ -51,10 +51,7 @@
     </nav>
   </header>
 </template>
-
-
 <script>
-
 
 export default {
   name: 'HeaderComponent',
@@ -82,5 +79,4 @@ export default {
     }
   }
 }
-
 </script>
