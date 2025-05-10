@@ -43,7 +43,22 @@ export default {
   name: 'FooterComponent',
   data() {
     return {
-      name: 'Felipe Peterle'
+      name: 'Felipe Peterle',
+      currentLang: this.$i18n.locale
+    }
+  },
+  methods:{
+    changeLanguage(lang) {
+      this.$i18n.locale = lang
+      this.currentLang = lang
+      localStorage.setItem('lang', lang)
+    }
+  },
+  mounted(){
+    const savedLang = localStorage.getItem('lang')
+    if (savedLang) {
+      this.$i18n.locale = savedLang
+      this.currentLang = savedLang
     }
   }
 }

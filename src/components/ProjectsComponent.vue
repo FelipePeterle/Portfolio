@@ -1,7 +1,6 @@
 <template>
   <section class="projects text-light py-5 px-3">
     <h2 class="text-center mb-5">{{ $t('projects.sectionTitle') }}</h2>
-
     <div class="row g-5">
       <div class="col-12 col-md-6 col-lg-4" v-for="(project, index) in projects" :key="project.name">
         <a :href="project.url" target="_blank" rel="noopener" class="project-card d-block text-decoration-none h-100">
@@ -14,7 +13,6 @@
         </a>
       </div>
     </div>
-
     <div class="text-center mt-5">
       <router-link class="btn btn-orange-outline px-4 py-2" to="/projects">
         {{ $t('projects.viewMore') }}
