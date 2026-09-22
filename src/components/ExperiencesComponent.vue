@@ -1,20 +1,37 @@
 <template>
-  <section class="experiences d-flex flex-column text-light py-5 px-3">
+  <section class="experiences py-5 px-3">
     <h2 class="text-center mb-5">{{ $t('experiences.sectionTitle') }}</h2>
-    <div v-for="(exp, index) in experiences" :key="index" class="row mb-5" ref="experienceItems">
-      <div class="col-12 col-md-4 text-md-end mb-2 mb-md-0"
-        :class="{ 'slide-in-left': visible[index], 'invisible': !visible[index] }">
-        <span>{{ $t(`experiences.list.${index}.period`) }}</span>
-      </div>
-      <div class="col-12 col-md-8" :class="{ 'slide-in-right': visible[index], 'invisible': !visible[index] }">
-        <h5 class="fw-semibold mb-1">{{ $t(`experiences.list.${index}.title`) }}</h5>
-        <a :href="experiences[index].companyUrl" target="_blank" rel="noopener"
-          class="company-link text-decoration-none">
-          {{ $t(`experiences.list.${index}.company`) }}
-        </a>
-        <p class="mt-2 mb-2">{{ $t(`experiences.list.${index}.description`) }}</p>
-        <div class="d-flex flex-wrap gap-2">
-          <span v-for="tag in experiences[index].tech" :key="tag" class="tech-badge">{{ tag }}</span>
+    <div class="timeline-wrapper">
+      <div
+        v-for="(exp, index) in experiences"
+        :key="index"
+        class="timeline-item"
+        :class="{ 'is-visible': visible[index] }"
+        ref="experienceItems"
+      >
+        <div class="timeline-marker">
+          <div class="marker-dot"></div>
+          <div v-if="index < experiences.length - 1" class="marker-line"></div>
+        </div>
+
+        <div class="timeline-content">
+          <div class="experience-card">
+            <div class="d-flex flex-wrap justify-content-between align-items-baseline gap-2 mb-2">
+              <h5 class="role-title m-0">{{ $t(`experiences.list.${index}.title`) }}</h5>
+              <span class="period-badge">{{ $t(`experiences.list.${index}.period`) }}</span>
+            </div>
+            
+            <a :href="experiences[index].companyUrl" target="_blank" rel="noopener" class="company-link">
+              <AppIcon icon="mdi:domain" width="16" class="me-1" />
+              <span>{{ $t(`experiences.list.${index}.company`) }}</span>
+            </a>
+            
+            <p class="role-description mt-3 mb-3">{{ $t(`experiences.list.${index}.description`) }}</p>
+            
+            <div v-if="experiences[index].tech && experiences[index].tech.length" class="d-flex flex-wrap gap-2 pt-1">
+              <span v-for="tag in experiences[index].tech" :key="tag" class="tech-badge">{{ tag }}</span>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -29,15 +46,15 @@ export default {
       experiences: [
         {
           companyUrl: 'https://www.cpaps.com.br/',
-          tech: ['HTML', 'Css', 'JavaScript', 'VueJs', 'Sass', 'Bootstrap', 'Git', 'GitHub', 'PHP', 'MySql', 'Docker']
+          tech: ['PHP', 'Lumen', 'TypeScript', 'Vue.js', 'MySQL', 'Docker', 'Git', 'Scrum']
         },
         {
           companyUrl: 'https://www.cpaps.com.br/',
-          tech: ['HTML', 'Css', 'JavaScript', 'VueJs', 'Sass', 'Bootstrap', 'Git', 'GitHub', 'Docker']
+          tech: ['Vue.js', 'CSS', 'JavaScript', 'HTML5', 'Git', 'APIs']
         },
         {
           companyUrl: 'https://www.cpaps.com.br/',
-          tech: []
+          tech: ['Suporte Técnico', 'Hardware', 'Redes', 'Infraestrutura']
         }
       ],
       visible: []

@@ -3,26 +3,33 @@ import { createI18n } from 'vue-i18n'
 const messages = {
   pt: {
     about: {
-      title: 'Desenvolvedor FrontEnd',
-      description: 'Desenvolvedor Front-End com 1 ano de experiência, graduando em Engenharia de Computação. Possuo experiência no desenvolvimento de layouts modernos utilizando HTML, CSS, JavaScript, TypeScript, Vue.js, Sass, Bootstrap e Tailwind CSS. Também tenho conhecimento em tecnologias como Docker, ERP Sankhya, Git e GitHub para versionamento de código, e MySQL para banco de dados.',
+      status: 'Disponível para novos projetos',
+      title: 'Desenvolvedor Full-Stack',
+      description: 'Desenvolvedor Full-Stack com forte autonomia na entrega de projetos de ponta a ponta, atuando tanto no desenvolvimento de interfaces modernas quanto na construção de back-ends robustos. Experiência marcante na criação e arquitetura de sistemas completos (abrangendo vendas, inventário, locação, ordens de serviço e orçamentos), além do desenvolvimento autônomo de aplicações web e dashboards gerenciais do zero. Sólida vivência na implementação de integrações complexas, como gateways de pagamento, unindo performance, escalabilidade e excelente experiência de usuário.',
       contact: 'Entre em contato',
       download: 'Download CV'
     },
-    technologies:{
-      title:'Tecnologias'
+    technologies: {
+      title: 'Tecnologias & Habilidades',
+      categories: {
+        backend: 'Back-End & Infraestrutura',
+        frontend: 'Front-End',
+        database: 'Bancos de Dados',
+        tools: 'Ferramentas & Metodologias'
+      }
     },
     experiences: {
       sectionTitle: 'Experiências',
       list: [
         {
           period: 'Dezembro, 2024 - Atualmente',
-          title: 'Analista de Desenvolvimento',
+          title: 'Desenvolvedor Full-Stack',
           company: 'CPAPS - Terapia do Sono',
-          description: 'Atuando como Desenvolvedor Front-End, sou responsável pela construção diária de layouts responsivos, integrando interfaces com APIs desenvolvidas no Back-End por meio de requisições HTTP. Utilizo Git e GitHub para controle de versionamento e colaboração em equipe. Também realizo consultas e manipulações de dados em banco de dados MySQL localmente, além de consumir endpoints criados em PHP para aplicação no Front-End. Trabalho com metodologias ágeis, como Scrum e Kanban, para organização e acompanhamento eficiente dos projetos.'
+          description: 'Atuação no desenvolvimento end-to-end de sistema interno de vendas, construindo APIs com PHP/Lumen e interfaces modernas em TypeScript e Vue.js. Responsável pela modelagem de banco de dados relacional (MySQL), criação de consultas SQL otimizadas e conteinerização de ambientes via Docker. Condução do ciclo de entregas com foco em qualidade, realizando a homologação de demandas, apoio a testes com o time de QA, gestão de deploys para produção e assegurando a aderência aos padrões técnicos da equipe sob rituais ágeis (Scrum).'
         },
         {
           period: 'Novembro, 2023 - Dezembro, 2024',
-          title: 'Assistente de TI',
+          title: 'Assistente de TI - JR I',
           company: 'CPAPS - Terapia do Sono',
           description: 'Atuei como Assistente de TI, prestando suporte ao cliente interno e acompanhando rotinas de manutenção. Durante esse período, aprofundei meus estudos em desenvolvimento Front-End e, mesmo na função de Assistente, tive a oportunidade de colaborar em equipe com outros desenvolvedores. Participei da criação de layouts e desenvolvimento de novos módulos para a empresa, consumindo APIs desenvolvidas pelo Back-End, utilizando endpoints e requisições para implementar funcionalidades.'
         },
@@ -54,6 +61,7 @@ const messages = {
     },
     projectsView: {
       sectionTitle: 'Meus projetos',
+      back: 'Voltar ao início',
       list: [
         {
           name: 'MakeYourburger',
@@ -84,34 +92,41 @@ const messages = {
   },
   en: {
     about: {
-      title: 'Front-End Developer',
-      description: 'Front-End Developer with 1 year of experience, currently pursuing a degree in Computer Engineering. I have experience building modern layouts using HTML, CSS, JavaScript, TypeScript, Vue.js, Sass, Bootstrap, and Tailwind CSS. I also have knowledge of technologies like Docker, ERP Sankhya, Git and GitHub for version control, and MySQL as a database.',
+      status: 'Available for new projects',
+      title: 'Full-Stack Developer',
+      description: 'Full-Stack Developer with strong autonomy in delivering end-to-end projects, working both on modern interface development and building robust backends. Proven experience in creating and architecting complete systems (covering sales, inventory, leasing/rentals, service orders, and quotes), as well as independently developing web applications and management dashboards from scratch. Solid background implementing complex integrations, such as payment gateways, combining performance, scalability, and an excellent user experience.',
       contact: 'Contact me',
       download: 'Download CV'
     },
-    technologies:{
-      title:'Technologies'
+    technologies: {
+      title: 'Technologies & Skills',
+      categories: {
+        backend: 'Back-End & Infrastructure',
+        frontend: 'Front-End',
+        database: 'Databases',
+        tools: 'Tools & Methodologies'
+      }
     },
     experiences: {
       sectionTitle: 'Experiences',
       list: [
         {
           period: 'December, 2024 - Present',
-          title: 'Development Analyst',
+          title: 'Full-Stack Developer',
           company: 'CPAPS - Terapia do Sono',
-          description: 'Working as a Front-End Developer, I am responsible for building responsive layouts daily, integrating interfaces with backend APIs through HTTP requests. I use Git and GitHub for version control and team collaboration. I also perform data queries and manipulation on local MySQL databases, and consume PHP-created endpoints for frontend use. I work with agile methodologies like Scrum and Kanban for efficient project management.'
+          description: 'End-to-end development of internal sales systems, building APIs with PHP/Lumen and modern user interfaces in TypeScript and Vue.js. Responsible for relational database modeling (MySQL), creating optimized SQL queries, and environment containerization with Docker. Managed delivery cycles focused on quality, conducting requirement validation, QA testing support, production deployments, and ensuring technical standards within agile rituals (Scrum).'
         },
         {
           period: 'November, 2023 - December, 2024',
-          title: 'IT Assistant',
+          title: 'IT Assistant - JR I',
           company: 'CPAPS - Terapia do Sono',
-          description: 'I worked as an IT Assistant, providing support to internal clients and following maintenance routines. During this time, I deepened my front-end development studies and had the opportunity to collaborate with other developers. I participated in layout creation and new module development, consuming backend-developed APIs and implementing features via HTTP requests.'
+          description: 'Worked as an IT Assistant, providing support to internal clients and following maintenance routines. During this time, deepened front-end development studies and collaborated with other developers to create layouts and new company modules, consuming backend APIs via HTTP requests to implement features.'
         },
         {
           period: 'July, 2023 - November, 2023',
           title: 'IT Intern',
           company: 'CPAPS - Terapia do Sono',
-          description: 'I started my career as an IT intern, where I gained experience in both infrastructure and development. During this period, I supported internal users, participated in computer maintenance routines, equipment replacements, repairs, and other support tasks.'
+          description: 'Started career as an IT intern, gaining experience in both infrastructure and development. Provided technical support to internal users, participated in computer maintenance routines, equipment replacement, repairs, and other technical support activities.'
         }
       ]
     },
@@ -135,6 +150,7 @@ const messages = {
     },
     projectsView: {
       sectionTitle: 'My Projects',
+      back: 'Back to home',
       list: [
         {
           name: 'MakeYourburger',

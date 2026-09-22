@@ -1,85 +1,143 @@
-@keyframes slideLeft {
-    from {
-        opacity: 0;
-        transform: translateX(-80px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-@keyframes slideRight {
-    from {
-        opacity: 0;
-        transform: translateX(80px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-.slide-in-left {
-    animation: slideLeft 1.3s ease forwards;
-}
-
-.slide-in-right {
-    animation: slideRight 1.3s ease forwards;
-}
-
-.invisible {
-    opacity: 0;
-}
-
 .experiences {
-    font-size: 0.95rem;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-    width: 80%;
-    margin: 0 auto 3rem;
+  color: var(--text-primary);
+  border-bottom: 1px solid var(--border-subtle);
+  max-width: 900px;
+  margin: 0 auto 4rem;
 
-    h2 {
-        font-size: 1.5rem;
+  h2 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    background: var(--gradient-metallic);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .timeline-wrapper {
+    position: relative;
+    padding-left: 0.25rem;
+  }
+
+  .timeline-item {
+    display: flex;
+    gap: 1.25rem;
+    position: relative;
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1), transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+
+    &.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+
+    @media (max-width: 576px) {
+      gap: 0.75rem;
+    }
+  }
+
+  .timeline-marker {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding-top: 6px;
+
+    .marker-dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: #f4f4f5;
+      border: 2px solid #27272a;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+      z-index: 2;
+    }
+
+    .marker-line {
+      width: 2px;
+      flex-grow: 1;
+      background: linear-gradient(to bottom, #3f3f46 0%, rgba(63, 63, 70, 0.2) 100%);
+      margin-top: 8px;
+    }
+  }
+
+  .timeline-content {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .experience-card {
+    background: var(--bg-surface);
+    border: 1px solid var(--border-subtle);
+    border-radius: 16px;
+    padding: 1.5rem;
+    backdrop-filter: blur(12px);
+    transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+
+    &:hover {
+      border-color: var(--border-hover);
+      background: var(--bg-surface-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35), 0 0 20px rgba(255, 255, 255, 0.03);
+    }
+
+    .role-title {
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: #ffffff;
+      letter-spacing: -0.01em;
+    }
+
+    .period-badge {
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: var(--text-muted);
+      background: rgba(255, 255, 255, 0.04);
+      padding: 0.25rem 0.65rem;
+      border-radius: 9999px;
+      border: 1px solid rgba(255, 255, 255, 0.06);
     }
 
     .company-link {
-        color: #ea580c;
-        font-weight: 500;
-        display: inline-block;
-        margin-bottom: 0.25rem;
+      display: inline-flex;
+      align-items: center;
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+      font-weight: 500;
+      text-decoration: none;
+      transition: color 0.2s ease;
 
-        &:hover {
-            text-decoration: underline;
-        }
+      &:hover {
+        color: #ffffff;
+      }
+    }
+
+    .role-description {
+      font-size: 0.9rem;
+      line-height: 1.65;
+      color: var(--text-secondary);
     }
 
     .tech-badge {
-        background-color: #111;
-        color: #ea580c;
-        font-size: 0.8rem;
-        padding: 0.3rem 0.6rem;
-        border-radius: 6px;
-        border: 1px solid rgba(255, 255, 255, 0.05);
-        transition: all 0.2s ease;
+      background: rgba(255, 255, 255, 0.04);
+      color: #e4e4e7;
+      font-size: 0.75rem;
+      font-weight: 500;
+      padding: 0.25rem 0.6rem;
+      border-radius: 6px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      transition: all 0.2s ease;
 
-        &:hover {
-            border-color: #ea580c;
-            background-color: #1c1c1c;
-        }
+      &:hover {
+        border-color: rgba(255, 255, 255, 0.25);
+        background: rgba(255, 255, 255, 0.08);
+        color: #ffffff;
+      }
     }
-
-    .col-md-4 span {
-        font-size: 0.85rem;
-        color: #cbd5e1;
-    }
-
-    h5 {
-        font-size: 1.1rem;
-    }
-
-    p {
-        font-size: 0.9rem;
-    }
+  }
 }
