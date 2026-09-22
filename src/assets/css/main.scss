@@ -28,10 +28,16 @@ body {
   font-family: 'Inter', sans-serif;
   color: var(--text-primary);
   background: 
-    radial-gradient(circle at 50% 0%, rgba(161, 161, 170, 0.08) 0%, transparent 45%),
-    radial-gradient(circle at 100% 25%, rgba(113, 113, 122, 0.04) 0%, transparent 40%),
-    #090a0c;
-  background-attachment: fixed;
+    radial-gradient(ellipse 90% 700px at 50% 0px, rgba(255, 255, 255, 0.06) 0%, transparent 75%),
+    linear-gradient(
+      180deg,
+      #23262e 0%,
+      #1c1e25 15%,
+      #16181e 32%,
+      #101115 52%,
+      #090a0c 72%,
+      #090a0c 100%
+    );
   min-height: 100vh;
   padding: 1.25rem 2rem 3rem;
   overflow-x: hidden;

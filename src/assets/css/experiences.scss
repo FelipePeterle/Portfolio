@@ -85,11 +85,12 @@
   }
 
   .experience-card {
-    background: var(--bg-surface);
+    background: rgba(14, 15, 18, 0.72);
     border: 1px solid var(--border-subtle);
     border-radius: 16px;
     padding: 1.5rem;
-    backdrop-filter: blur(12px);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
     transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
 
     &:hover {
