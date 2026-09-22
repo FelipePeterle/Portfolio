@@ -5,27 +5,26 @@
       <h2 class="section-title m-0">{{ $t('technologies.title') }}</h2>
     </div>
 
-    <!-- Bento Grid Container -->
-    <div class="bento-grid">
-      <!-- Bento Card 1: Back-End & Infra (Large) -->
-      <div class="bento-card bento-wide">
-        <div class="bento-card-glow"></div>
-        <div class="bento-card-inner">
-          <div class="bento-header d-flex align-items-center justify-content-between mb-3">
+    <!-- Symmetrical Standardized Grid -->
+    <div class="tech-grid">
+      <!-- Card 1: Back-End & Infra -->
+      <div class="tech-card">
+        <div class="tech-card-inner">
+          <div class="tech-card-header d-flex align-items-center justify-content-between mb-3">
             <div class="d-flex align-items-center gap-2">
               <div class="category-icon-wrapper">
                 <AppIcon icon="mdi:server" width="20" />
               </div>
               <h3 class="category-title m-0">{{ $t('technologies.categories.backend') }}</h3>
             </div>
-            <span class="bento-badge">Core Focus</span>
+            <span class="tech-badge">Back-End</span>
           </div>
 
-          <p class="bento-description mb-4">
+          <p class="tech-card-desc mb-4">
             Desenvolvimento de back-ends robustos, microsserviços e APIs com alta performance e escalabilidade.
           </p>
 
-          <div class="tech-pills-container d-flex flex-wrap gap-2">
+          <div class="tech-pills-container d-flex flex-wrap gap-2 mt-auto">
             <a
               v-for="tech in backendItems"
               :key="tech.name"
@@ -44,25 +43,60 @@
         </div>
       </div>
 
-      <!-- Bento Card 2: Bancos de Dados & Modelagem -->
-      <div class="bento-card bento-compact">
-        <div class="bento-card-glow"></div>
-        <div class="bento-card-inner">
-          <div class="bento-header d-flex align-items-center justify-content-between mb-3">
+      <!-- Card 2: Front-End Moderno -->
+      <div class="tech-card">
+        <div class="tech-card-inner">
+          <div class="tech-card-header d-flex align-items-center justify-content-between mb-3">
+            <div class="d-flex align-items-center gap-2">
+              <div class="category-icon-wrapper">
+                <AppIcon icon="mdi:code-braces" width="20" />
+              </div>
+              <h3 class="category-title m-0">{{ $t('technologies.categories.frontend') }}</h3>
+            </div>
+            <span class="tech-badge">Front-End</span>
+          </div>
+
+          <p class="tech-card-desc mb-4">
+            Interfaces responsivas e fluidas com tipagem estática, componentização reativa e alta usabilidade.
+          </p>
+
+          <div class="tech-pills-container d-flex flex-wrap gap-2 mt-auto">
+            <a
+              v-for="tech in frontendItems"
+              :key="tech.name"
+              :href="tech.url"
+              target="_blank"
+              rel="noopener"
+              class="tech-pill"
+              :title="tech.name"
+            >
+              <div class="tech-pill-icon">
+                <AppIcon :icon="tech.icon" width="20" />
+              </div>
+              <span class="tech-pill-name">{{ tech.name }}</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3: Bancos de Dados & Modelagem -->
+      <div class="tech-card">
+        <div class="tech-card-inner">
+          <div class="tech-card-header d-flex align-items-center justify-content-between mb-3">
             <div class="d-flex align-items-center gap-2">
               <div class="category-icon-wrapper">
                 <AppIcon icon="mdi:database-outline" width="20" />
               </div>
               <h3 class="category-title m-0">{{ $t('technologies.categories.database') }}</h3>
             </div>
-            <span class="bento-badge">SQL</span>
+            <span class="tech-badge">Database</span>
           </div>
 
-          <p class="bento-description mb-4">
+          <p class="tech-card-desc mb-4">
             Modelagem relacional, consultas SQL otimizadas e integridade de dados corporativos.
           </p>
 
-          <div class="tech-pills-container d-flex flex-wrap gap-2">
+          <div class="tech-pills-container d-flex flex-wrap gap-2 mt-auto">
             <a
               v-for="tech in databaseItems"
               :key="tech.name"
@@ -81,64 +115,26 @@
         </div>
       </div>
 
-      <!-- Bento Card 3: Arquitetura & Boas Práticas -->
-      <div class="bento-card bento-compact">
-        <div class="bento-card-glow"></div>
-        <div class="bento-card-inner">
-          <div class="bento-header d-flex align-items-center justify-content-between mb-3">
+      <!-- Card 4: Arquitetura & Boas Práticas -->
+      <div class="tech-card">
+        <div class="tech-card-inner">
+          <div class="tech-card-header d-flex align-items-center justify-content-between mb-3">
             <div class="d-flex align-items-center gap-2">
               <div class="category-icon-wrapper">
                 <AppIcon icon="mdi:shield-check-outline" width="20" />
               </div>
               <h3 class="category-title m-0">{{ $t('technologies.categories.architecture') }}</h3>
             </div>
-            <span class="bento-badge">Quality</span>
+            <span class="tech-badge">Quality</span>
           </div>
 
-          <p class="bento-description mb-4">
+          <p class="tech-card-desc mb-4">
             Código limpo, arquitetura desacoplada, testes automatizados e entrega ágil contínua.
           </p>
 
-          <div class="tech-pills-container d-flex flex-wrap gap-2">
+          <div class="tech-pills-container d-flex flex-wrap gap-2 mt-auto">
             <a
               v-for="tech in architectureItems"
-              :key="tech.name"
-              :href="tech.url"
-              target="_blank"
-              rel="noopener"
-              class="tech-pill"
-              :title="tech.name"
-            >
-              <div class="tech-pill-icon">
-                <AppIcon :icon="tech.icon" width="20" />
-              </div>
-              <span class="tech-pill-name">{{ tech.name }}</span>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Bento Card 4: Front-End Moderno (Large) -->
-      <div class="bento-card bento-wide">
-        <div class="bento-card-glow"></div>
-        <div class="bento-card-inner">
-          <div class="bento-header d-flex align-items-center justify-content-between mb-3">
-            <div class="d-flex align-items-center gap-2">
-              <div class="category-icon-wrapper">
-                <AppIcon icon="mdi:code-braces" width="20" />
-              </div>
-              <h3 class="category-title m-0">{{ $t('technologies.categories.frontend') }}</h3>
-            </div>
-            <span class="bento-badge">Modern UI</span>
-          </div>
-
-          <p class="bento-description mb-4">
-            Interfaces responsivas e fluidas com tipagem estática, componentização reativa e alta usabilidade.
-          </p>
-
-          <div class="tech-pills-container d-flex flex-wrap gap-2">
-            <a
-              v-for="tech in frontendItems"
               :key="tech.name"
               :href="tech.url"
               target="_blank"

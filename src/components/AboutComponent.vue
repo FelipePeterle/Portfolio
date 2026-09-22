@@ -4,11 +4,6 @@
       <div class="row align-items-center g-4 g-lg-5">
         <!-- Left Column: Bio & Impact Statement -->
         <div class="col-12 col-lg-7 text-start animate-slide-right delay-0">
-          <div class="hero-kicker d-inline-flex align-items-center gap-2 mb-3">
-            <span class="kicker-pulse"></span>
-            <span>{{ $t('about.kicker') }}</span>
-          </div>
-
           <h1 class="hero-headline mb-3">
             {{ $t('about.title') }}
           </h1>
@@ -38,13 +33,18 @@
             </a>
           </div>
 
-          <div class="hero-quick-tags d-flex flex-wrap align-items-center gap-2">
-            <span class="quick-tag-label">{{ $t('about.hud.status') }}:</span>
-            <span class="quick-tag">Go (Golang)</span>
-            <span class="quick-tag">PHP / Laravel</span>
-            <span class="quick-tag">TypeScript</span>
-            <span class="quick-tag">Vue.js</span>
-            <span class="quick-tag">Docker</span>
+          <div class="hero-focus-container d-flex flex-wrap align-items-center gap-2">
+            <div class="focus-label d-inline-flex align-items-center gap-2 me-1">
+              <span class="focus-dot"></span>
+              <span class="focus-title">{{ $t('about.hud.status') }}:</span>
+            </div>
+            <div class="focus-chips d-inline-flex flex-wrap align-items-center gap-2">
+              <span class="quick-tag">Go (Golang)</span>
+              <span class="quick-tag">PHP / Laravel</span>
+              <span class="quick-tag">TypeScript</span>
+              <span class="quick-tag">Vue.js</span>
+              <span class="quick-tag">Docker</span>
+            </div>
           </div>
         </div>
 
