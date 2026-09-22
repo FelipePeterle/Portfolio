@@ -44,32 +44,32 @@ export default {
       projects: [
         {
           image: require('@/assets/img/Projects/makeYourBurger.gif'),
-          tech: ['HTML', 'Css', 'Javascript', 'Vue', 'Sass'],
+          tech: ['Vue.js', 'JavaScript', 'Sass', 'JSON Server'],
           url: 'https://github.com/FelipePeterle/MakeYourBurger'
         },
         {
           image: require('@/assets/img/Projects/Vidflow.png'),
-          tech: ['HTML', 'Css', 'Javascript'],
+          tech: ['JavaScript', 'REST APIs', 'Async/Await'],
           url: 'https://github.com/FelipePeterle/VidFlow---Alura'
         },
         {
           image: require('@/assets/img/Projects/Fokus.png'),
-          tech: ['HTML', 'Css', 'Javascript'],
+          tech: ['JavaScript', 'DOM API', 'LocalStorage'],
           url: 'https://github.com/FelipePeterle/Projeto-fokus-atualizado'
         },
         {
           image: require('@/assets/img/Projects/Meteora.png'),
-          tech: ['HTML', 'Css', 'Javascript', 'Bootstrap'],
+          tech: ['Bootstrap 5', 'HTML5', 'CSS3', 'Responsive UI'],
           url: 'https://github.com/FelipePeterle/Meteora'
         },
         {
           image: require('@/assets/img/Projects/NewsLetter.png'),
-          tech: ['HTML', 'Css', 'Javascript', 'Tailwind Css'],
+          tech: ['Tailwind CSS', 'Responsive UI', 'Animations'],
           url: 'https://github.com/FelipePeterle/Newsletter---Alura'
         },
         {
           image: require('@/assets/img/Projects/AluraBooks.png'),
-          tech: ['HTML', 'Css', 'Javascript'],
+          tech: ['JavaScript', 'Functional Programming', 'Array Methods'],
           url: 'https://github.com/FelipePeterle/MetodosDeArray'
         }
       ]

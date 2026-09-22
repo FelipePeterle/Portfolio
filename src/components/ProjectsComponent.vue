@@ -47,17 +47,17 @@ export default {
     projects: [
       {
         image: require('@/assets/img/Projects/makeYourBurger.gif'),
-        tech: ['HTML', 'Css', 'Javascript', 'Vue', 'Sass'],
+        tech: ['Vue.js', 'JavaScript', 'Sass', 'JSON Server'],
         url: 'https://github.com/FelipePeterle/MakeYourBurger'
       },
       {
         image: require('@/assets/img/Projects/Vidflow.png'),
-        tech: ['HTML', 'Css', 'Javascript'],
+        tech: ['JavaScript', 'REST APIs', 'Async/Await'],
         url: 'https://github.com/FelipePeterle/VidFlow---Alura'
       },
       {
         image: require('@/assets/img/Projects/Fokus.png'),
-        tech: ['HTML', 'Css', 'Javascript'],
+        tech: ['JavaScript', 'DOM API', 'LocalStorage'],
         url: 'https://github.com/FelipePeterle/Projeto-fokus-atualizado'
       }
     ]
