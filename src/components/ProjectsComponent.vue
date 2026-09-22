@@ -1,6 +1,9 @@
 <template>
-  <section class="projects py-5 px-3">
-    <h2 class="text-center mb-5">{{ $t('projects.sectionTitle') }}</h2>
+  <section id="projects" class="projects py-5 px-3">
+    <div class="section-header text-center mb-5">
+      <div class="section-kicker mb-2">Vitrine</div>
+      <h2 class="section-title m-0">{{ $t('projects.sectionTitle') }}</h2>
+    </div>
     <div class="row g-4">
       <div class="col-12 col-md-6 col-lg-4" v-for="(project, index) in projects" :key="project.name">
         <a :href="project.url" target="_blank" rel="noopener" class="project-card d-flex flex-column h-100 text-decoration-none">

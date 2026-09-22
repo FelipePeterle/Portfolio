@@ -2,20 +2,33 @@ import { createI18n } from 'vue-i18n'
 
 const messages = {
   pt: {
+    nav: {
+      about: 'Sobre',
+      technologies: 'Stack',
+      experiences: 'Experiência',
+      projects: 'Projetos'
+    },
     about: {
-      status: 'Disponível para novos projetos',
+      kicker: 'Engenharia de Software • Full-Stack',
       title: 'Desenvolvedor Full-Stack',
       description: 'Desenvolvedor Full-Stack com forte autonomia na entrega de projetos de ponta a ponta, atuando tanto no desenvolvimento de interfaces modernas quanto na construção de back-ends robustos. Experiência marcante na criação e arquitetura de sistemas completos (abrangendo vendas, inventário, locação, ordens de serviço e orçamentos), além do desenvolvimento autônomo de aplicações web e dashboards gerenciais do zero. Sólida vivência na implementação de integrações complexas, como gateways de pagamento, unindo performance, escalabilidade e excelente experiência de usuário.',
       contact: 'Entre em contato',
-      download: 'Download CV'
+      download: 'Download CV',
+      hud: {
+        file: 'profile.json',
+        status: 'Foco: Go & Arquitetura',
+        education: 'Engenharia de Computação @ Multivix',
+        focus: 'Back-End com Go (Golang) & PHP',
+        architecture: 'Clean Architecture, Testes & APIs REST'
+      }
     },
     technologies: {
-      title: 'Tecnologias & Habilidades',
+      title: 'Stack & Especialidades',
       categories: {
         backend: 'Back-End & Infraestrutura',
-        frontend: 'Front-End',
-        database: 'Bancos de Dados',
-        tools: 'Ferramentas & Metodologias'
+        frontend: 'Front-End Moderno',
+        database: 'Bancos de Dados & Modelagem',
+        architecture: 'Arquitetura, Testes & Metodologias'
       }
     },
     experiences: {
@@ -91,20 +104,33 @@ const messages = {
     }
   },
   en: {
+    nav: {
+      about: 'About',
+      technologies: 'Stack',
+      experiences: 'Experience',
+      projects: 'Projects'
+    },
     about: {
-      status: 'Available for new projects',
+      kicker: 'Software Engineering • Full-Stack',
       title: 'Full-Stack Developer',
       description: 'Full-Stack Developer with strong autonomy in delivering end-to-end projects, working both on modern interface development and building robust backends. Proven experience in creating and architecting complete systems (covering sales, inventory, leasing/rentals, service orders, and quotes), as well as independently developing web applications and management dashboards from scratch. Solid background implementing complex integrations, such as payment gateways, combining performance, scalability, and an excellent user experience.',
       contact: 'Contact me',
-      download: 'Download CV'
+      download: 'Download CV',
+      hud: {
+        file: 'profile.json',
+        status: 'Focus: Go & Architecture',
+        education: 'Computer Engineering @ Multivix',
+        focus: 'Back-End with Go (Golang) & PHP',
+        architecture: 'Clean Architecture, Testing & REST APIs'
+      }
     },
     technologies: {
-      title: 'Technologies & Skills',
+      title: 'Stack & Specialties',
       categories: {
         backend: 'Back-End & Infrastructure',
-        frontend: 'Front-End',
-        database: 'Databases',
-        tools: 'Tools & Methodologies'
+        frontend: 'Modern Front-End',
+        database: 'Databases & Modeling',
+        architecture: 'Architecture, Testing & Methodologies'
       }
     },
     experiences: {

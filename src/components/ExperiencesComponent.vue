@@ -1,6 +1,9 @@
 <template>
-  <section class="experiences py-5 px-3">
-    <h2 class="text-center mb-5">{{ $t('experiences.sectionTitle') }}</h2>
+  <section id="experiences" class="experiences py-5 px-3">
+    <div class="section-header text-center mb-5">
+      <div class="section-kicker mb-2">Carreira</div>
+      <h2 class="section-title m-0">{{ $t('experiences.sectionTitle') }}</h2>
+    </div>
     <div class="timeline-wrapper">
       <div
         v-for="(exp, index) in experiences"

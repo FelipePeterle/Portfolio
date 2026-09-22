@@ -1,21 +1,37 @@
 <template>
-  <header class="header d-flex justify-content-between align-items-center pb-5">
-    <div class="brand-wrapper" @click="getUrlHome()" role="button" tabindex="0">
-      <h1 class="m-0">{{ title }}</h1>
-    </div>
-    <nav class="icon">
-      <ul class="m-0 d-flex align-items-center list-unstyled gap-2 gap-sm-3">
-        <li>
-          <a href="https://github.com/FelipePeterle" target="_blank" rel="noopener" class="nav-icon-btn" title="GitHub" aria-label="GitHub">
-            <AppIcon icon="mdi:github" width="20" />
-          </a>
-        </li>
-        <li>
-          <a href="https://br.linkedin.com/in/felipe-peterle" target="_blank" rel="noopener" class="nav-icon-btn" title="LinkedIn" aria-label="LinkedIn">
-            <AppIcon icon="mdi:linkedin" width="20" />
-          </a>
-        </li>
-        <li class="dropdown">
+  <header class="floating-header-container">
+    <div class="floating-navbar d-flex justify-content-between align-items-center">
+      <!-- Left: Brand / Monogram -->
+      <div class="brand-wrapper d-flex align-items-center gap-2" @click="handleBrandClick" role="button" tabindex="0">
+        <span class="brand-monogram">FP</span>
+        <span class="brand-name d-none d-sm-inline">{{ title }}</span>
+      </div>
+
+      <!-- Center: Section Anchors -->
+      <nav class="nav-links-wrapper d-none d-md-flex align-items-center gap-1">
+        <a href="#about" @click.prevent="scrollTo('about')" class="nav-pill-link">
+          {{ $t('nav.about') }}
+        </a>
+        <a href="#technologies" @click.prevent="scrollTo('technologies')" class="nav-pill-link">
+          {{ $t('nav.technologies') }}
+        </a>
+        <a href="#experiences" @click.prevent="scrollTo('experiences')" class="nav-pill-link">
+          {{ $t('nav.experiences') }}
+        </a>
+        <a href="#projects" @click.prevent="scrollTo('projects')" class="nav-pill-link">
+          {{ $t('nav.projects') }}
+        </a>
+      </nav>
+
+      <!-- Right: Socials & Language -->
+      <div class="actions-wrapper d-flex align-items-center gap-2">
+        <a href="https://github.com/FelipePeterle" target="_blank" rel="noopener" class="nav-icon-btn" title="GitHub" aria-label="GitHub">
+          <AppIcon icon="mdi:github" width="18" />
+        </a>
+        <a href="https://br.linkedin.com/in/felipe-peterle" target="_blank" rel="noopener" class="nav-icon-btn" title="LinkedIn" aria-label="LinkedIn">
+          <AppIcon icon="mdi:linkedin" width="18" />
+        </a>
+        <div class="dropdown">
           <a
             class="nav-icon-btn dropdown-toggle text-decoration-none"
             href="#"
@@ -26,7 +42,7 @@
             title="Language"
             aria-label="Language"
           >
-            <AppIcon icon="mdi:earth" width="20" />
+            <AppIcon icon="mdi:earth" width="18" />
           </a>
           <ul class="dropdown-menu dropdown-menu-end custom-dropdown shadow-lg">
             <li>
@@ -52,13 +68,13 @@
               </button>
             </li>
           </ul>
-        </li>
-      </ul>
-    </nav>
+        </div>
+      </div>
+    </div>
   </header>
 </template>
-<script>
 
+<script>
 export default {
   name: 'HeaderComponent',
   data() {
@@ -68,8 +84,39 @@ export default {
     }
   },
   methods: {
-    getUrlHome() {
-      this.$router.push({ name: 'home' })
+    handleBrandClick() {
+      if (this.$route.name !== 'home') {
+        this.$router.push({ name: 'home' })
+      } else {
+        window.scrollTo({ top: 0, behavior: 'smooth' })
+      }
+    },
+    scrollTo(id) {
+      if (this.$route.name !== 'home') {
+        this.$router.push({ name: 'home' }).then(() => {
+          setTimeout(() => {
+            const el = document.getElementById(id)
+            if (el) {
+              const offset = 80
+              const bodyRect = document.body.getBoundingClientRect().top
+              const elementRect = el.getBoundingClientRect().top
+              const elementPosition = elementRect - bodyRect
+              const offsetPosition = elementPosition - offset
+              window.scrollTo({ top: offsetPosition, behavior: 'smooth' })
+            }
+          }, 150)
+        })
+        return
+      }
+      const el = document.getElementById(id)
+      if (el) {
+        const offset = 80
+        const bodyRect = document.body.getBoundingClientRect().top
+        const elementRect = el.getBoundingClientRect().top
+        const elementPosition = elementRect - bodyRect
+        const offsetPosition = elementPosition - offset
+        window.scrollTo({ top: offsetPosition, behavior: 'smooth' })
+      }
     },
     changeLanguage(lang) {
       this.$i18n.locale = lang

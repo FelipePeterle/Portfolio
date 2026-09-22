@@ -1,32 +1,85 @@
-.header {
-  .brand-wrapper {
-    display: inline-block;
-    cursor: pointer;
-    outline: none;
+.floating-header-container {
+  position: sticky;
+  top: 1.25rem;
+  z-index: 1000;
+  max-width: 960px;
+  margin: 0 auto 3rem;
+  width: 100%;
 
-    &:focus-visible h1 {
-      opacity: 0.9;
+  .floating-navbar {
+    background: rgba(14, 15, 18, 0.78);
+    border: 1px solid var(--border-subtle);
+    border-radius: 9999px;
+    padding: 0.5rem 0.85rem 0.5rem 1.25rem;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45), 0 0 15px rgba(255, 255, 255, 0.02);
+    transition: all 0.3s ease;
+
+    &:hover {
+      border-color: var(--border-hover);
     }
   }
 
-  h1 {
-    background-image: var(--gradient-metallic);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    font-size: 2rem;
-    line-height: 2.25rem;
-    font-weight: 700;
-    letter-spacing: -0.03em;
-    transition: opacity 0.3s ease, filter 0.3s ease;
+  .brand-wrapper {
+    cursor: pointer;
+    user-select: none;
+    outline: none;
 
-    &:hover {
-      opacity: 0.95;
-      filter: drop-shadow(0 0 16px rgba(255, 255, 255, 0.2));
+    .brand-monogram {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      font-weight: 800;
+      font-size: 0.85rem;
+      letter-spacing: -0.02em;
+      color: #ffffff;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+      transition: all 0.25s ease;
     }
 
-    @media (max-width: 576px) {
-      font-size: 1.5rem;
+    .brand-name {
+      font-size: 0.95rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      background: var(--gradient-metallic);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      transition: opacity 0.25s ease;
+    }
+
+    &:hover {
+      .brand-monogram {
+        background: rgba(255, 255, 255, 0.15);
+        border-color: rgba(255, 255, 255, 0.35);
+        transform: scale(1.05);
+      }
+      .brand-name {
+        opacity: 0.85;
+      }
+    }
+  }
+
+  .nav-links-wrapper {
+    .nav-pill-link {
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-size: 0.85rem;
+      font-weight: 500;
+      padding: 0.4rem 0.85rem;
+      border-radius: 9999px;
+      transition: all 0.2s ease;
+
+      &:hover {
+        color: #ffffff;
+        background: rgba(255, 255, 255, 0.07);
+      }
     }
   }
 
@@ -34,20 +87,19 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 40px;
-    height: 40px;
+    width: 34px;
+    height: 34px;
     color: var(--text-secondary);
-    background: var(--bg-surface);
+    background: rgba(255, 255, 255, 0.04);
     border: 1px solid var(--border-subtle);
-    border-radius: 10px;
+    border-radius: 50%;
     transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
-    backdrop-filter: blur(8px);
     text-decoration: none;
 
     &:hover,
     &[aria-expanded="true"] {
       color: #ffffff;
-      background: var(--bg-surface-hover);
+      background: rgba(255, 255, 255, 0.1);
       border-color: var(--border-hover);
       transform: translateY(-1px);
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
