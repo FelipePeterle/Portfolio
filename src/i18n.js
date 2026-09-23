@@ -17,7 +17,7 @@ const messages = {
       hud: {
         file: 'profile.json',
         status: 'Foco: Go & Arquitetura',
-        education: 'Engenharia de Computação @ Multivix',
+        education: 'Engenharia de Computação (Multivix)',
         focus: 'Back-End com Go (Golang) & PHP',
         architecture: 'Clean Architecture, Testes & APIs REST'
       }
@@ -119,7 +119,7 @@ const messages = {
       hud: {
         file: 'profile.json',
         status: 'Focus: Go & Architecture',
-        education: 'Computer Engineering @ Multivix',
+        education: 'Computer Engineering (Multivix)',
         focus: 'Back-End with Go (Golang) & PHP',
         architecture: 'Clean Architecture, Testing & REST APIs'
       }
