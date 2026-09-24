@@ -67,8 +67,8 @@ const messages = {
           description: 'Esse projeto foi feito a partir do curso de JavaScript: consumindo e tratando dados de uma API da Alura, aonde pude aprimorar conhecimento de consumir API pelo frontend, criação de filtros dinâmicos, criação de funções assíncronas e seus respectivos tratamentos. Também foi utilizado JSON Server para mockar o backend.'
         },
         {
-          name: 'Fokus',
-          description: 'Projeto feito durante meu período de estudo, foi desenvolvido a partir das aulas de manipulação do DOM e do LocalStorage nas videoaulas da Alura, onde pude me aprofundar mais no meu conhecimento de JavaScript.'
+          name: 'Go Products API',
+          description: 'API RESTful completa em Go (Golang) com framework Gin e PostgreSQL. Estruturada seguindo o padrão de arquitetura em camadas (Controller, UseCase, Repository), consultas SQL parametrizadas com lib/pq e conteinerização via Docker e Docker Compose.'
         }
       ]
     },
@@ -85,8 +85,8 @@ const messages = {
           description: 'Esse projeto foi feito a partir do curso de JavaScript: consumindo e tratando dados de uma API da Alura, aonde pude aprimorar conhecimento de consumir API pelo frontend, criação de filtros dinâmicos, criação de funções assíncronas e seus respectivos tratamentos. Também foi utilizado JSON Server para mockar o backend.'
         },
         {
-          name: 'Fokus',
-          description: 'Projeto feito durante meu período de estudo, foi feito a partir das aulas de manipulação do DOM e do LocalStorage nas videoaulas da Alura, onde pude me aprofundar mais no meu conhecimento de JavaScript.'
+          name: 'Go Products API',
+          description: 'API RESTful completa em Go (Golang) com framework Gin e PostgreSQL. Estruturada seguindo o padrão de arquitetura em camadas (Controller, UseCase, Repository), consultas SQL parametrizadas com lib/pq e conteinerização via Docker e Docker Compose.'
         },
         {
           name: 'Meteora',
@@ -169,8 +169,8 @@ const messages = {
           description: 'This project was built from the JavaScript course: consuming and processing API data from Alura. I improved my API consumption skills, created dynamic filters, asynchronous functions, and error handling. JSON Server was also used to mock the backend.'
         },
         {
-          name: 'Fokus',
-          description: 'Project developed during my study phase, based on DOM and LocalStorage manipulation lessons from Alura’s courses. It helped me deepen my JavaScript knowledge.'
+          name: 'Go Products API',
+          description: 'Production-ready RESTful API in Go (Golang) using Gin framework and PostgreSQL. Structured with layered Clean Architecture (Controller, UseCase, Repository), parameterized SQL queries via lib/pq, and full containerization with Docker and Docker Compose.'
         }
       ]
     },
@@ -187,8 +187,8 @@ const messages = {
           description: 'This project was developed from a JavaScript course on consuming and processing data from an API on Alura. I improved my frontend API consumption skills, created dynamic filters and async functions. JSON Server was used to mock the backend.'
         },
         {
-          name: 'Fokus',
-          description: 'A project built during my learning period, based on DOM and LocalStorage manipulation lessons from Alura, helping deepen my JavaScript knowledge.'
+          name: 'Go Products API',
+          description: 'Production-ready RESTful API in Go (Golang) using Gin framework and PostgreSQL. Structured with layered Clean Architecture (Controller, UseCase, Repository), parameterized SQL queries via lib/pq, and full containerization with Docker and Docker Compose.'
         },
         {
           name: 'Meteora',

@@ -53,9 +53,9 @@ export default {
           url: 'https://github.com/FelipePeterle/VidFlow---Alura'
         },
         {
-          image: require('@/assets/img/Projects/Fokus.png'),
-          tech: ['JavaScript', 'DOM API', 'LocalStorage'],
-          url: 'https://github.com/FelipePeterle/Projeto-fokus-atualizado'
+          image: require('@/assets/img/Projects/GoApiProdutos.png'),
+          tech: ['Go (Golang)', 'Gin Gonic', 'PostgreSQL', 'Docker'],
+          url: 'https://github.com/FelipePeterle/Go-Api-Produtos'
         },
         {
           image: require('@/assets/img/Projects/Meteora.png'),
