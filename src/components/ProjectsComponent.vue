@@ -29,13 +29,6 @@
         </a>
       </div>
     </div>
-    
-    <div class="text-center mt-5">
-      <router-link class="btn btn-frosted px-4 py-2 d-inline-flex align-items-center gap-2" to="/projects">
-        <span>{{ $t('projects.viewMore') }}</span>
-        <AppIcon icon="mdi:arrow-right" width="16" />
-      </router-link>
-    </div>
   </section>
 </template>
 
