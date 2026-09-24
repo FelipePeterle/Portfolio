@@ -61,16 +61,6 @@ export default {
           image: require('@/assets/img/Projects/Meteora.png'),
           tech: ['Bootstrap 5', 'HTML5', 'CSS3', 'Responsive UI'],
           url: 'https://github.com/FelipePeterle/Meteora'
-        },
-        {
-          image: require('@/assets/img/Projects/NewsLetter.png'),
-          tech: ['Tailwind CSS', 'Responsive UI', 'Animations'],
-          url: 'https://github.com/FelipePeterle/Newsletter---Alura'
-        },
-        {
-          image: require('@/assets/img/Projects/AluraBooks.png'),
-          tech: ['JavaScript', 'Functional Programming', 'Array Methods'],
-          url: 'https://github.com/FelipePeterle/MetodosDeArray'
         }
       ]
     }

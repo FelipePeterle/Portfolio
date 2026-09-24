@@ -91,14 +91,6 @@ const messages = {
         {
           name: 'Meteora',
           description: 'Projeto totalmente responsivo, feito durante prática de Bootstrap 5 na Alura. A ideia é ser um layout de um marketplace.'
-        },
-        {
-          name: 'NewsLetter',
-          description: 'Newsletter desenvolvida a partir do curso de Tailwind da Alura, onde foram aplicadas diversas classes utilitárias, desde responsividades, cores e até mesmo animações.'
-        },
-        {
-          name: 'AluraBooks',
-          description: 'Projeto feito durante curso de Métodos de Array na Alura, onde foi desenvolvido um layout responsivo de uma plataforma de livros, utilizando métodos do JavaScript como Filter, Reduce e Map para criação de filtros.'
         }
       ]
     }
@@ -193,14 +185,6 @@ const messages = {
         {
           name: 'Meteora',
           description: 'Fully responsive project developed during Bootstrap 5 practice on Alura, simulating a marketplace layout.'
-        },
-        {
-          name: 'NewsLetter',
-          description: 'Newsletter developed during the Tailwind CSS course on Alura, applying multiple utility classes for responsiveness, colors, and animations.'
-        },
-        {
-          name: 'AluraBooks',
-          description: 'Built during an Array Methods course on Alura, this responsive book platform used JavaScript methods like Filter, Reduce, and Map to create dynamic filters.'
         }
       ]
     }
