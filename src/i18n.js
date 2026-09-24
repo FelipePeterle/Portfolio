@@ -87,10 +87,6 @@ const messages = {
         {
           name: 'Go Products API',
           description: 'API RESTful completa em Go (Golang) com framework Gin e PostgreSQL. Estruturada seguindo o padrão de arquitetura em camadas (Controller, UseCase, Repository), consultas SQL parametrizadas com lib/pq e conteinerização via Docker e Docker Compose.'
-        },
-        {
-          name: 'Meteora',
-          description: 'Projeto totalmente responsivo, feito durante prática de Bootstrap 5 na Alura. A ideia é ser um layout de um marketplace.'
         }
       ]
     }
@@ -181,10 +177,6 @@ const messages = {
         {
           name: 'Go Products API',
           description: 'Production-ready RESTful API in Go (Golang) using Gin framework and PostgreSQL. Structured with layered Clean Architecture (Controller, UseCase, Repository), parameterized SQL queries via lib/pq, and full containerization with Docker and Docker Compose.'
-        },
-        {
-          name: 'Meteora',
-          description: 'Fully responsive project developed during Bootstrap 5 practice on Alura, simulating a marketplace layout.'
         }
       ]
     }

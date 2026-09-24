@@ -56,11 +56,6 @@ export default {
           image: require('@/assets/img/Projects/GoApiProdutos.png'),
           tech: ['Go (Golang)', 'Gin Gonic', 'PostgreSQL', 'Docker'],
           url: 'https://github.com/FelipePeterle/Go-Api-Produtos'
-        },
-        {
-          image: require('@/assets/img/Projects/Meteora.png'),
-          tech: ['Bootstrap 5', 'HTML5', 'CSS3', 'Responsive UI'],
-          url: 'https://github.com/FelipePeterle/Meteora'
         }
       ]
     }
